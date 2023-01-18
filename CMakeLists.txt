@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD 99)
 include_directories(.)
 
 add_library(hashmap_c
-        hashmap.c
+        STATIC hashmap.c
         hashmap.h)
 
 install(TARGETS hashmap_c EXPORT hashmap_cTargets
